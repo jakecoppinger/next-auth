@@ -257,6 +257,22 @@ importers:
       neo4j-driver: 4.4.6
       next-auth: link:../next-auth
 
+  packages/adapter-postgres:
+    specifiers:
+      '@next-auth/adapter-test': workspace:^0.0.0
+      '@next-auth/tsconfig': workspace:^0.0.0
+      '@types/pg': ^8.6.5
+      jest: ^27.4.3
+      next-auth: workspace:*
+      pg: ^8.7.1
+    devDependencies:
+      '@next-auth/adapter-test': link:../adapter-test
+      '@next-auth/tsconfig': link:../tsconfig
+      '@types/pg': 8.6.5
+      jest: 27.5.1
+      next-auth: link:../next-auth
+      pg: 8.7.3
+
   packages/adapter-pouchdb:
     specifiers:
       '@next-auth/adapter-test': workspace:^0.0.0
@@ -6604,6 +6620,14 @@ packages:
 
   /@types/parse5/6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
+    dev: true
+
+  /@types/pg/8.6.5:
+    resolution: {integrity: sha512-tOkGtAqRVkHa/PVZicq67zuujI4Oorfglsr2IbKofDwBSysnaqSx7W1mDqFqdkGE6Fbgh+PZAl0r/BWON/mozw==}
+    dependencies:
+      '@types/node': 18.0.0
+      pg-protocol: 1.5.0
+      pg-types: 2.2.0
     dev: true
 
   /@types/pouchdb-adapter-cordova-sqlite/1.0.1:
